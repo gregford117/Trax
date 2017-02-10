@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/master.css" />  
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" />
+    <div>
+        <div style="display: inline-block;">
+            <asp:SqlDataSource ID="DS_Site_Pages" runat="server" ConnectionString="<%$ ConnectionStrings: Trax %>"
+                SelectCommand="select * from tb_Website_Pages where Page_Active = 1 order by Page_Order;" />
+
+            <asp:GridView ID="GV_Site_Pages" runat="server" 
+                AutoGenerateColumns="false" DataSourceID="DS_Site_Pages" style="border: solid black 0px;">
+                <Columns>
+                    <asp:TemplateField>
+                        <ItemTemplate>
+                            <div style="width: 200px; height: 60px; text-align:center; position:relative;">
+                                <asp:Button ID="A_Nar_Bar_Item" runat="server" CssClass="nav-bar-item" PostBackUrl='<%# Eval("Page_File_Path") %>' Text='<%# Eval("Page_Name") %>' />                                                               
+                                <ajax:RoundedCornersExtender ID="RCE_Nav_Bar_Item" runat="server" TargetControlID="A_Nar_Bar_Item" Corners="Right"/>
+                            </div>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+
+                <RowStyle BorderStyle="None" BorderColor="White" BorderWidth="0px" Height="10px" />
+                <HeaderStyle BorderStyle="None" BorderColor="White" BorderWidth="0px" />
+            </asp:GridView>
+        </div>
+
+        <div style="display: inline-block;">
+            <asp:ContentPlaceHolder id="body" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    
+    </form>
+</body>
+</html>
