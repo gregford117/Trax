@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trax", "Trax\Trax.csproj", "{EABB8C24-AF61-4774-99D6-F45668A3872C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trax.Tests", "Trax.Tests\Trax.Tests.csproj", "{65382FB2-00AB-4A48-B31B-A6CF69398E33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EABB8C24-AF61-4774-99D6-F45668A3872C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABB8C24-AF61-4774-99D6-F45668A3872C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABB8C24-AF61-4774-99D6-F45668A3872C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABB8C24-AF61-4774-99D6-F45668A3872C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65382FB2-00AB-4A48-B31B-A6CF69398E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65382FB2-00AB-4A48-B31B-A6CF69398E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65382FB2-00AB-4A48-B31B-A6CF69398E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65382FB2-00AB-4A48-B31B-A6CF69398E33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

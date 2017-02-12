@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{EABB8C24-AF61-4774-99D6-F45668A3872C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Trax/Web.config">
+    <Files>
+      <File FileName="Trax/Web.config" Line="9" Column="16" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Trax PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
